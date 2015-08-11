@@ -18,6 +18,8 @@ var ground = false;
 var S0, S1, S2, S3, S4, S5, S6;
 var partColor;
 
+var pypot_pos = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0];
+
 function addRobot() {
 
 	// building the ergo
@@ -165,12 +167,12 @@ function render() {
 	}
 
 	if (S0 !== undefined ) {
-	  S1.rotation.z = effectController.M1 * Math.PI/180;
-	  S2.rotation.z = effectController.M2 * Math.PI/180;
-	  S3.rotation.z = effectController.M3 * Math.PI/180;
-	  S4.rotation.z = Math.PI/2.0 + effectController.M4 * Math.PI/180;
-	  S5.rotation.z = effectController.M5 * Math.PI/180;
-	  S6.rotation.z = effectController.M6 * Math.PI/180;
+	  S1.rotation.z = pypot_pos[0] * Math.PI/180;
+	  S2.rotation.z = pypot_pos[1] * Math.PI/180;
+	  S3.rotation.z = pypot_pos[2] * Math.PI/180;
+	  S4.rotation.z = Math.PI/2.0 + pypot_pos[3] * Math.PI/180;
+	  S5.rotation.z = pypot_pos[4] * Math.PI/180;
+	  S6.rotation.z = pypot_pos[5] * Math.PI/180;
 	}
 
 	renderer.render(scene, camera);
@@ -229,6 +231,7 @@ try {
 	setupScene();
 	drawHelpers();
 	addToDOM();
+	poll_pos();
 	render();
 
 	THREE.DefaultLoadingManager.onProgress = function ( item, loaded, total ) {
@@ -243,4 +246,33 @@ try {
 } catch(e) {
 	var errorReport = "Your program encountered an unrecoverable error, can not draw on canvas. Error was:<br/><br/>";
 	$('#container').append(errorReport+e);
+}
+
+function poll_pos() {
+	setInterval(function() {
+	$.get("http://172.16.153.135:8080/motor/m1/register/present_position",
+				function (data) {
+					pypot_pos[0] = data.present_position;
+				});
+	$.get("http://172.16.153.135:8080/motor/m2/register/present_position",
+				function (data) {
+					pypot_pos[1] = data.present_position;
+				});
+	$.get("http://172.16.153.135:8080/motor/m3/register/present_position",
+				function (data) {
+					pypot_pos[2] = data.present_position;
+				});
+	$.get("http://172.16.153.135:8080/motor/m4/register/present_position",
+				function (data) {
+					pypot_pos[3] = data.present_position;
+				});
+	$.get("http://172.16.153.135:8080/motor/m5/register/present_position",
+				function (data) {
+					pypot_pos[4] = data.present_position;
+				});
+	$.get("http://172.16.153.135:8080/motor/m6/register/present_position",
+				function (data) {
+					pypot_pos[5] = data.present_position;
+				});
+	}, 50);
 }
