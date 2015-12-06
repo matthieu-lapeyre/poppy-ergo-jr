@@ -1,5 +1,34 @@
 # Step by Step Assembly
 
+![Another Step](https://c2.staticflickr.com/6/5757/23487047041_4695749e87_o.gif)
+
+![Another Step](https://c1.staticflickr.com/1/681/22942875373_cf9efe94bf_o.gif)
+
+![another step](https://c2.staticflickr.com/6/5808/23543328806_6fbfb6be70_o.gif)
+
+![another step](https://c2.staticflickr.com/6/5811/23461336552_573b90638f_o.gif)
+
+![another step](https://c1.staticflickr.com/1/677/23543250266_4950a49365_o.gif)
+
+![another step](https://c1.staticflickr.com/1/670/22941539544_c3ecdafe28_o.gif)
+
+![another step](https://c1.staticflickr.com/1/780/23569245285_9d4d0eb29e_o.gif)
+
+![another step](https://c1.staticflickr.com/1/614/23201746459_3def043f54_o.gif)
+
+![another step](https://c2.staticflickr.com/6/5692/23460615872_59a492f2e6_o.gif)
+
+![another step](https://c2.staticflickr.com/6/5676/22941997133_087b715cc8_o.gif)
+
+![another step](https://c2.staticflickr.com/6/5723/23273183950_2be634be49_o.gif)
+
+![another step](https://c2.staticflickr.com/6/5806/22942964623_0117ba619d_o.gif)
+
+![another step](https://c2.staticflickr.com/6/5679/23461664332_3b44ee6ca9_o.gif)
+
+![another step](https://c1.staticflickr.com/1/738/23460456322_217f9cdd5f_o.gif)
+
+
 ## BOM
 
 For building a Poppy Ergo Jr, you will need:
@@ -42,29 +71,19 @@ For building a Poppy Ergo Jr, you will need:
 
 Connect the longest cable to one XL-320 motor. Connect a regular cable to the other side.
 
-![Another Step](img/assembly/step-1-1.jpg)
 
-![Another Step](img/assembly/step-1-2.jpg)
 
 ### Step 2
 
 Mount the motor on the 3D printed base. The wires should go out from the back.
 
-![Another Step](img/assembly/step-2.jpg)
-
 ### Step 3
 
 Mount the U_horn_to_horn part.
 
-![Another Step](img/assembly/step-3-1.jpg)
-
-![Another Step](img/assembly/step-3-2.jpg)
-
 ### Step 4
 
 Mount another motor on top.
-
-![Another Step](img/assembly/step-4-1.jpg)
 
 The OLLO Pulley is inside and you should assemble it with the bigger rivet. Bonus, you can watch this step in [slow motion](https://vimeo.com/125704291).
 
@@ -77,31 +96,27 @@ Do not forget the cable!
 
 Mount both shift_one_sides on the motors.
 
-![Another Step](img/assembly/step-5.jpg)
 
 ### Step 6
 
 Add another motor on top. Make sure to have the pulley on the same side.
 
-![Another Step](img/assembly/step-6.jpg)
 
 ### Step 7
 
 Mount the U_side_to_horn on a new motor.
 
-![Another Step](img/assembly/step-7.jpg)
 
 ### Step 8
 
 Mount it on top of the previous assembly. The nose of the motor should be on the other side of the base.
 
-![Another Step](img/assembly/step-8.jpg)
 
 ### Step 9
 
 Mount two other shift_one_sides and a motor. Repeat this twice. All the pulley should still be on the same side.
 
-![Another Step](img/assembly/step-9.jpg)
+
 
 ### Step 10
 
